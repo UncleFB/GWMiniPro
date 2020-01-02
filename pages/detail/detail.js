@@ -11,7 +11,12 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    temp: 25,
+    humi: 30,
+    light: 33,
+    switch1Checked: false,
+    switch2Checked: false,
+    switch3Checked: false
   },
 
   /**

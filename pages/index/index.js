@@ -15,9 +15,9 @@ Page({
       url: '../logs/logs'
     })
   },
-  device: function(){
+  toDevice(){
     wx.redirectTo({
-      url: '/pages/device/device'
+      url: '/pages/list/list',
     })
   },
   onLoad: function () {
