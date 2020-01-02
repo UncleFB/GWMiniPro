@@ -1,0 +1,15 @@
+.tempContainer {
+  display: flex;
+  flex-direction: column;
+  
+}
+.device {
+  margin: 10rpx;
+  border-bottom: 5rpx solid slategray;
+}
+.pic {
+  width: 200rpx;
+  height: 200rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,10 @@
+/* pages/detail/detail.wxss */
+.detailcontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx;
+}
+.btn {
+  background: rgb(38, 59, 177);
+  margin: 10rpx;
+}

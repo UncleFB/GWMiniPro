@@ -1,0 +1,8 @@
+<template name="listTmp">
+    <view class="tmpContainer">
+        <view class="device">
+            <image class="pic" src="/images/device.jpg" />
+            <text class="mac">{{mac}}</text>
+        </view>
+    </view>
+</template>

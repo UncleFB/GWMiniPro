@@ -1,0 +1,9 @@
+<!--pages/detail/detail.wxml-->
+<view class="detailcontainer">
+  <text class="temp">温度：</text>
+  <text class="humi">湿度：</text>
+  <text class="light">光照强度：</text>
+  <button class="btn">开关1</button>
+  <button class="btn">开关2</button>
+  <button class="btn">开关3</button>
+</view>
