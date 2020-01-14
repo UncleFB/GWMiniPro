@@ -1,8 +1,11 @@
 <template name="listTmp">
-    <view class="tmpContainer">
-        <view class="device">
-            <image class="pic" src="/images/device.jpg" />
-            <text class="mac">{{mac}}</text>
-        </view>
+  <view class="device">
+    <view class="pic_text">
+      <image class="pic" src="/images/device.jpg" />
+      <text class="mac">{{mac}}</text>
     </view>
+    <view class="delBtn">
+      <button type="warn" data-deviceId="{{id}}" catchtap="delDevice" size="mini">删除</button>
+    </view>
+  </view>
 </template>

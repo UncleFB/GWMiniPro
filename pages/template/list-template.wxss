@@ -1,15 +1,16 @@
-.tempContainer {
-  display: flex;
-  flex-direction: column;
-  
-}
 .device {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
   margin: 10rpx;
   border-bottom: 5rpx solid slategray;
 }
 .pic {
   width: 200rpx;
   height: 200rpx;
-  vertical-align: middle;
   margin-right: 10rpx;
+  vertical-align: middle;
+}
+.delBtn{
+  margin-left: auto;
 }

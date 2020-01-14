@@ -1,8 +1,15 @@
 <import src='/pages/template/list-template.wxml'/>
 <view>
-  <block wx:for='{{listArr}}' wx:key='{{index}}'>
-    <view catchtap="toDetail">
-      <template is='listTmp' data='{{...item}}'></template>
-    </view>
-  </block>
+  <view wx:for='{{devices}}' wx:key='index' data-mac="{{devices[index].mac}}" catchtap="toDetail">
+    <template is='listTmp' data='{{...item}}'></template>
+  </view>
+  <button type="primary" bindtap="addBtn">添加</button>
+
+  <view wx:if='{{add}}' class="weui-cells weui-cells_after-title">
+      <form bindsubmit="add">
+        <input name="mac" placeholder="输入mac地址"/>
+        <button formType="submit" type="primary" size="mini" bindtap="addDevice">确定</button>
+        <button formType="reset" type="defalt" size="mini" bindtap="cancel">取消</button>
+      </form>
+  </view>
 </view>

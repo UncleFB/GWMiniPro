@@ -1,19 +1,18 @@
 <!--pages/detail/detail.wxml-->
 <view class="detailcontainer">
   <view class="topDetail">
-    <live-player src="https://domain/pull_stream" mode="RTC" autoplay bindstatechange="statechange" binderror="error" style="width: 300px; height: 225px;" />
-
+    <live-player src="rtmp://rtmp01open.ys7.com/openlive/91da562088f34d23b6c5bf2cf9d237e9.hd" mode="RTC" autoplay="true" bindstatechange="statechange" binderror="error" style="width: 100%; height: 400rpx;" />
   </view>
   <view class="bottomDetail">
     <view class="showData">
-      <text class="temp">温度：{{temp}} ℃</text>
-      <text class="humi">湿度：{{humi}} %</text>
-      <text class="light">光照强度：{{light}}</text>
+      <text class="temp">温度：{{t}} ℃</text>
+      <text class="humi">湿度：{{h}} %</text>
+      <text class="light">光照强度：{{l}}</text>
     </view>
     <view class="switchView">
-      <switch class="switch" checked="{{switch1Checked}}" indchange="switch1Change" />
-      <switch class="switch" checked="{{switch2Checked}}" indchange="switch2Change" />
-      <switch class="switch" checked="{{switch3Checked}}" indchange="switch3Change" />
+      <switch class="switch switch1" checked="{{switch1}}" bindchange="switch1Change" />
+      <switch class="switch switch2" checked="{{switch2}}" bindchange="switch2Change" />
+      <switch class="switch switch3" checked="{{switch3}}" bindchange="switch3Change" />
     </view>
   </view>
 </view>

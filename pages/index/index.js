@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '开启绿色生活',
+    motto: '进入绿墙',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -15,7 +15,7 @@ Page({
       url: '../logs/logs'
     })
   },
-  toDevice(){
+  toList(){
     wx.redirectTo({
       url: '/pages/list/list',
     })
@@ -49,7 +49,6 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

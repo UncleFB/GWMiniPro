@@ -1,14 +1,12 @@
 {
   "pages": [
-        "pages/detail/detail",
     "pages/index/index",
     "pages/list/list",
-
-    "pages/logs/logs"
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#8ed145",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "绿墙",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh":true

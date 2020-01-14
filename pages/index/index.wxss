@@ -1,7 +1,7 @@
 /**index.wxss**/
 page{
   height: 100%;
-  background: #8ed145;
+  background: #fff;
 }
 .userinfo {
   display: flex;
@@ -17,9 +17,12 @@ page{
 }
 
 .userinfo-nickname {
-  color: #fff;
+  color: black;
 }
 
 .usermotto {
   margin-top: 200rpx;
+}
+.user-motto {
+  background-color: green;
 }

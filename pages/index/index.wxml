@@ -9,6 +9,6 @@
   </view>
 
   <view class="usermotto">
-    <button class="user-motto" bindtap="toDevice">{{motto}}</button>
+    <button class="user-motto" bindtap="toList">{{motto}}</button>
   </view>
 </view>
